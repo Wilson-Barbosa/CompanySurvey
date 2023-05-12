@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Employee Satisfaction</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+
+  <body>
+    <header>
+        <h1 id="title">Employee Satisfaction Survey</h1>
+        <p id="description">This is a quick survey conducted by our Company. Please share with us how is the experience of working here and what if any improvements you would wish to see! Thank you for your time!</p>
+    </header>   
+    
+    <form id="survey-form">
+
+        <fieldset><!--Employee's personal information-->
+            <label for="name">Name:<input id="name" type="text" placeholder="Enter your full name" required></label>      
+            <label for="email">E-mail:<input id="email" type="email" placeholder="Enter your Email" required></label>
+            <label for="number">Age (optional):<input id="number" type="number" min="18" max="120" placeholder="Enter your age"></label>
+        </fieldset>
+
+        <fieldset><!--Employee's Departament-->
+            <p>Please, select your departament within the Company:</p>
+            <label for="dropdown">
+                <select id="dropdown">
+                    <option value="">(select one option)</option>
+                    <option value="1">Engineering</option>
+                    <option value="2">Quality Assurance</option>
+                    <option value="3">Factory Line</option>
+                    <option value="4">Human Resources</option>
+                    <option value="5">Security Personel</option>
+                </select>
+            </label>
+        </fieldset> 
+
+        <fieldset><!--user's experience-->
+            <p>How would rate your experience working for us?</p>
+            <label for="excelent"><input id="excelent" type="radio" name="experience" value="excelent">Excelent</label>
+            <label for="good"><input id="good" type="radio" name="experience" value="good">Good</label>
+            <label for="average"><input id="average" type="radio" name="experience" value="average">Average</label>
+            <label for="bad"><input id="bad" type="radio" name="experience" value="bad">Bad</label>
+            <label for="horrible"><input id="horrible" type="radio" name="experience" value="horrible">Horrible</label>
+        </fieldset>
+      
+        <fieldset><!--Possible improvenments-->
+            <p>Please, tell us what aspects of day-to-day you wish to be improved:</p>
+            <label for="communication"><input type="checkbox" id="communication" value="communication">Communication</label>
+            <label for="working-conditions"><input type="checkbox" id="working-conditions" value="working-conditions">Working Conditions</label>
+            <label for="food-service"><input type="checkbox" id="food-service" value="food-service">Food Service</label>
+            <label for="security-measures"><input type="checkbox" id="security-measures" value="security-measures">Security Measures</label>
+            <label for="career-plans"><input type="checkbox" id="career-plans" value="career-plans">Career Plans</label>
+            <label for="parking-lot-logistics"><input type="checkbox" id="parking-lot-logistics" value="parking-lot-logistics">Parking Lot Logistics</label>
+            <label for="meeting-schedules"><input type="checkbox" id="meeting-schedules" value="meeting-schedules">Meeting Schedules</label>
+        </fieldset>
+
+        <fieldset><!--User's suggestions-->
+            <p>Please, if you have any suggestions feel free to send us a message:</p>
+            <textarea id="suggestions" name="suggestions" placeholder="Write your message here"></textarea>
+        </fieldset>
+        
+        <!--Submit Buttom-->
+        <button id="submit" type="submit">Button</button>
+    </form>
+  </body>
+</html>
